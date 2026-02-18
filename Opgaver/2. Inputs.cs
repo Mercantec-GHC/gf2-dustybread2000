@@ -27,8 +27,8 @@ namespace Opgaver
             Console.WriteLine("Indtast en streng: ");
             // Lav opgaven herunder!
             string input = Console.ReadLine();
-            Console.WriteLine("Bailey " + input);
-        }
+
+		}
 
         public static void Int1()
         {
@@ -38,7 +38,11 @@ namespace Opgaver
 
             Console.WriteLine("Indtast et tal: ");
             // Lav opgaven herunder!
-        }
+           
+
+
+
+		}
 
         public static void Double1()
         {
