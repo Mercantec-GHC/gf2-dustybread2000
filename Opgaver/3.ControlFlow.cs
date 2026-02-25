@@ -176,6 +176,15 @@ namespace Opgaver
             for en bruger og man regner gennemsnittet ud."
             );
             // Lav opgaven herunder!
+            Console.WriteLine("Enter your grade (12, 10, 7, 4, 02, 00 or -3):");
+            string input = Console.ReadLine();
+            int grade = int.Parse(input);
+
+            switch (grade)
+            {
+                
+            }
+
         }
     }
 }

@@ -27,6 +27,10 @@ namespace Opgaver
             Console.WriteLine("Opgave 1:");
             Console.WriteLine("Brug et loop til at udskrive tallene fra 1 til 10.");
             // Lav opgaven herunder!
+            for (int i =0; i<10;i++)
+            {
+                Console.WriteLine("i = " + i);
+            }
         }
 
         public static void Loop2()
