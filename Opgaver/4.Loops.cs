@@ -40,9 +40,10 @@ namespace Opgaver
             // Lav opgaven herunder!
             for (int i =1; i <=20; i++)
                 if (i % 2 == 0)
-             {
-                Console.WriteLine(i);
-			 }
+                    {
+                    Console.WriteLine(i);
+				}
+
 		}
 
         public static void Loop3()

@@ -5,7 +5,11 @@ namespace Hjemmet
         public void Start()
         {
             Console.WriteLine("Gæt et tal er ikke implementeret endnu.");
-            Console.ReadKey();
-        }
+            
+            Random random = new Random();
+            int randomNumber = random.Next(101);
+            Console.WriteLine(randomNumber);
+
+		}
     }
 }
