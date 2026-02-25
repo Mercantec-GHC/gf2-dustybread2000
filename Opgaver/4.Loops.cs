@@ -27,9 +27,9 @@ namespace Opgaver
             Console.WriteLine("Opgave 1:");
             Console.WriteLine("Brug et loop til at udskrive tallene fra 1 til 10.");
             // Lav opgaven herunder!
-            for (int i =0; i<10;i++)
+            for (int i =1; i <=10; i++)
             {
-                Console.WriteLine("i = " + i);
+                Console.WriteLine(i);
             }
         }
 
@@ -38,7 +38,12 @@ namespace Opgaver
             Console.WriteLine("Opgave 2:");
             Console.WriteLine("Brug et loop og en if-betingelse til at udskrive alle lige tal fra 2 til 20.");
             // Lav opgaven herunder!
-        }
+            for (int i =1; i <=20; i++)
+                if (i % 2 == 0)
+             {
+                Console.WriteLine(i);
+			 }
+		}
 
         public static void Loop3()
         {
