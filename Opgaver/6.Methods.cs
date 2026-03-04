@@ -41,31 +41,83 @@ namespace Opgaver
             Console.WriteLine("Opgave 1 (Grundlæggende method):");
             Console.WriteLine("Lav en method der udskriver 'Hej verden!' og kald den fra denne method.");
             // Lav opgaven herunder!
-        }
 
-        public static void Method2()
+            SkrivHejVärden();
+			//Anropar metoden 'SkrivHejVärden' nedanför 
+			//'Method1' körs hoppar det ner till metoden nedan 
+            //'SkrivHejVärden' och kör koden där
+		}
+
+		public static void SkrivHejVärden()
+			//Egen metod som skriver ut "Hej världen!" när den anropas
+        {
+            Console.WriteLine("Hej världen!");
+			//Koden som skriver ut "Hej världen!" på konsolen
+		}
+
+		public static void Method2()
         {
             Console.WriteLine("Opgave 2 (Grundlæggende method):");
             Console.WriteLine("Lav en method der udskriver tallene fra 1 til 5 og kald den fra denne method.");
             // Lav opgaven herunder!
-        }
+            Ketchupp();
+		}
+
+        public static void Ketchupp()
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine(i);
+			}
+		}
+        
 
         public static void Method3()
         {
             Console.WriteLine("Opgave 3 (Grundlæggende method):");
             Console.WriteLine("Lav en method der beder brugeren om deres navn og hilser på dem, og kald den fra denne method.");
             // Lav opgaven herunder!
-        }
+            HilsePåBrugeren();  
+		}
+        public static void HilsePåBrugeren()
+        {
+            Console.WriteLine("Hvad er dit navn?");
+            string navn = Console.ReadLine();
+            Console.WriteLine($"Hej {navn}!");
+		}
 
-        public static void Parameter1()
+		public static void Parameter1()
         {
             Console.WriteLine("Opgave 4 (Parameter):");
             Console.WriteLine("Lav en method der tager et navn som parameter og udskriver 'Hej [navn]!'");
             // Lav opgaven herunder!
             // Kald metoden med dit eget navn
-        }
+            nameParameter("Nicole");
+            nameParameter("Nicole", 25, 1999, "Black");
+            nameParameter("Nicole", 25, 1999, "Black");
+            nameParameter("Nicole", 25, 1999, "Black");
+            nameParameter("Nicole", 25, 1999, "Black");
+            nameParameter("Nicole", 25, 1999, "Black");
+            nameParameter("Nicole", 25, 1999, "Black");
+            nameParameter("Nicole", 25, 1999, "Black");
+            Console.WriteLine("Hej nicole, du er 25 aar gammel og er fra 1999 og har sort undertoej på!");
+            Console.WriteLine("Hej nicole, du er 25 aar gammel og er fra 1999 og har sort undertoej på!");
+            Console.WriteLine("Hej nicole, du er 25 aar gammel og er fra 1999 og har sort undertoej på!");
+            Console.WriteLine("Hej nicole, du er 25 aar gammel og er fra 1999 og har sort undertoej på!");
+            Console.WriteLine("Hej nicole, du er 25 aar gammel og er fra 1999 og har sort undertoej på!");
+            Console.WriteLine("Hej nicole, du er 25 aar gammel og er fra 1999 og har sort undertoej på!");
+		}
 
-        public static void Parameter2()
+        public static void nameParameter(string name, int age, int year, string underwearColor)
+        {
+            Console.WriteLine($"Hej {name}");
+            Console.WriteLine($"Hej {name}, du er {age} år gammel, og er fra {year}, og har {underwearColor} undertoej på!");
+			// Denna metod tar fyra parametrar: 'name' (string), 'age' (int), 'year' (int) och 'underwearColor' (string).
+			// Den skriver ut en hälsning som inkluderar alla dessa parametrar i en formaterad sträng.
+            // Ändrar underkläder till tröja eller vad som
+		}
+
+		public static void Parameter2()
         {
             Console.WriteLine("Opgave 5 (Parameter):");
             Console.WriteLine("Lav en method der tager to tal som parametre og udskriver summen af dem.");
